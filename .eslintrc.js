@@ -9,9 +9,10 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "local-rules"
     ],
     "rules": {
-        "no-process-node-env": "error"
+        "local-rules/no-process-node-env": "error"
     }
 };
