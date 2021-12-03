@@ -1,0 +1,21 @@
+{
+  "name": "custom-eslint-demo",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/sa2taka.cutom-eslint-demo",
+  "author": "sa2taka",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/eslint": "^8.2.0",
+    "@types/estree": "^0.0.50",
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "build:eslint": "yarn tsc -p ./eslint/tsconfig.json",
+    "lint": "yarn eslint --rulesdir=eslint/rules --ext .ts"
+  }
+}
