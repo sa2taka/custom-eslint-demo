@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var isMemberExpression = function (object) {
     return object.type === "MemberExpression";
 };
@@ -9,7 +7,6 @@ var isIdentifier = function (expression) {
 var rule = {
     meta: {
         type: "problem",
-        fixable: "code",
         hasSuggestions: true,
         docs: {
             description: "許可のされていないprocess.env.NODE_ENV",
@@ -60,3 +57,4 @@ var rule = {
     },
 };
 module.exports = rule;
+export {};

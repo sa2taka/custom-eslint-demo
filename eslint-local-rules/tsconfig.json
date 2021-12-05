@@ -1,12 +1,10 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true,
-    "outDir": "./rules"
+    "outDir": "./rules",
+    "rootDir": "src"
   },
+  "exclude": [
+    "__tests__"
+  ]
 }

@@ -21,7 +21,7 @@
   },
   "scripts": {
     "build:eslint": "yarn tsc -p ./eslint-local-rules/tsconfig.json",
-    "lint": "yarn eslint --rulesdir=eslint/rules --ext .ts",
+    "lint": "yarn eslint --ext .ts src/",
     "test": "jest"
   }
 }
