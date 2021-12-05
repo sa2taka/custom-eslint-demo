@@ -16,7 +16,6 @@ const isIdentifier = (expression: Expression | Super | PrivateIdentifier): expre
 const rule = {
   meta: {
     type: "problem",
-    fixable: "code",
     hasSuggestions: true,
     docs: {
       description: "許可のされていないprocess.env.NODE_ENV",
